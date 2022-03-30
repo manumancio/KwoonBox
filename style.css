@@ -1,0 +1,781 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.seccion {
+    padding: 50px 0;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin: 0 20px;
+    padding: 30px 0;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(/images/rsz_portada3.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.nav__link:hover {
+    color: rgb(185, 177, 180);
+}
+
+.nav__item {
+    line-height: 80px;
+    padding: 0 30px;
+    list-style: none;
+    width: max-content;
+}
+
+.nav__link--active {
+    text-decoration: none;
+    padding: 11px 22px;
+    color: rgb(59, 152, 238);
+    border: solid 2px rgb(59, 152, 238);
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+.nav__link--active:hover {
+    color: #000;
+    background-color: rgb(59, 152, 238);
+    transition: color .5s;
+}
+
+.nav__img-logo {
+    height: 80px;
+    padding: 0 30px;
+}
+
+.nav-toggle {
+    background-color: #000000;
+    height: 60px;
+    line-height: 60px;
+    width: 5vw;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    margin: 0 20px;
+    display: none;
+    font-weight: lighter;
+}
+
+
+
+.seccion-header {
+    padding-top: 3.3em;
+}
+
+.seccion-header__texto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 4em;
+    color: #fff;
+    padding: 1.1em;
+    text-shadow: 0.1em 0.1em 0.2em rgb(24, 23, 23);
+}
+
+
+
+.btn-wsp {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    bottom: 60px;
+    right: 60px;
+    background-color: rgb(43, 192, 80);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    bottom: 60px;
+    right: 60px;
+    background-color: rgb(43, 192, 80);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover {
+    background-color: #fff;
+    color: rgb(43, 192, 80);
+    transition: color .2s;
+}
+
+
+
+.tres-pasos__pasos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tres-pasos__pasos h3 {
+    padding: 8px;
+    width: 10vw;
+    min-width: 300px;
+    text-align: center;
+    font-size: 25px;
+    align-items: center;
+    line-height: 1.3;
+    text-shadow: 0.02em 0.02em 0.04em #333
+}
+
+.tres-pasos__pasos h3 span {
+    background-color: rgb(59, 152, 238);
+    padding: 0.8em;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    margin: 4px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.5);
+}
+
+
+
+.programas {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.programas__tipos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+.programa-crossfit {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7)),
+        url(/images/HD2rsz_1victor-freitas-vjkm-0m34ku-unsplash.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    width: 40vw;
+    min-width: 350px;
+
+    height: 40vh;
+    display: table;
+    padding: 5px;
+    margin: 20px;
+}
+
+.programa-crossfit a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.programa-crossfit a:hover {
+    background: url(/images/HD2rsz_1victor-freitas-vjkm-0m34ku-unsplash.jpg);
+    background-size: cover;
+}
+
+.programa-funcional {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7)),
+        url(images/competenciasRZ.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    width: 40vw;
+    min-width: 350px;
+
+    height: 40vh;
+    display: table;
+    padding: 5px;
+    margin: 20px;
+}
+
+.programa-funcional a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: #000000 0.9;
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 20px;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.programa-funcional a:hover {
+    background: url(images/competenciasRZ.jpg);
+    background-size: cover;
+}
+
+.programa-running {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7)),
+        url(images/runningRZ.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    width: 40vw;
+    min-width: 350px;
+    height: 40vh;
+    display: table;
+    padding: 5px;
+    margin: 20px;
+}
+
+.programa-running a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px;
+    text-shadow: #000000 0.9;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.programa-running a:hover {
+    background: url(/images/runningRZ.jpg);
+    background-size: cover;
+}
+
+.programa-teens {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7)), url(/images/KIDS\ AND\ TEEN.jpeg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    width: 40vw;
+    min-width: 350px;
+
+    height: 40vh;
+    display: table;
+    padding: 5px;
+    margin: 20px;
+}
+
+.programa-teens a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: #000000 0.9;
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 20px;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.programa-teens a:hover {
+    background: url(/images/KIDS\ AND\ TEEN.jpeg);
+    background-size: cover;
+}
+
+
+
+.nuestro-equipo {
+    background-color: #000000;
+    color: #fff;
+}
+
+.nuestro-equipo__contenedor {
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 130px;
+}
+
+.nuestro-equipo__item {
+    width: 20vw;
+    min-width: 350px;
+    height: 57vh;
+    object-fit: cover;
+    background-color: #000;
+    padding: 0 5px;
+}
+
+.nuestro-equipo__item--active {
+    width: 20vw;
+    min-width: 350px;
+    height: 57vh;
+    max-height: 57vh;
+    background: rgb(59, 152, 238);
+    text-shadow: 0.1em 0.1em 0.2em rgb(20, 19, 19);
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    word-wrap: break-word;
+}
+
+.nuestro-equipo__item--active p {
+    justify-content: center;
+    padding: 35px 15px;
+    line-height: 1.5;
+}
+
+.nuestro-equipo__item--active a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nuestro-equipo__item--active a:hover {
+    color: #000;
+}
+
+
+.prueba-gratis {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.4), hsla(0, 0%, 0%, 0.9));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.4), hsla(0, 0%, 0%, 0.9)),
+        url(/images/rsz_yaregistrate44.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    min-height: 500px;
+    color: #fff;
+    text-align: center;
+}
+
+.prueba-texto h2 {
+    font-size: 40px;
+    padding: 60px 40px;
+}
+
+.prueba-texto h2 b {
+    color: rgb(219, 20, 20)
+}
+
+.link-registrate {
+    text-decoration: none;
+    background-color: rgba(0, 140, 255, 0.164);
+    border: rgb(59, 152, 238) 3px solid;
+    padding: 20px;
+    color: rgb(59, 152, 238);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link-registrate:hover {
+    border: rgb(5, 85, 150) 4px solid;
+    color: rgb(5, 85, 150);
+    transition: color .2s;
+}
+
+
+
+#nuestro-team h2 {
+    background-color: #000000;
+    color: #fff;
+    font-size: 30px;
+}
+
+.opiniones-equipo__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.opiniones-equipo__item {
+    border: 4px solid rgb(59, 152, 238);
+    box-shadow: 0.1em 0.1em 0.2em black;
+    padding: 10px;
+    margin: 30px;
+    line-height: 1.5;
+    font-size: 20px;
+    width: 25vw;
+    min-width: 300px;
+    text-align: justify;
+}
+
+.opiniones__nombre {
+    padding: 8px;
+}
+
+.opiniones__persona h3 {
+    text-align: center;
+}
+
+
+
+footer {
+    background: #000;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.contenedor-footer section {
+    padding: 30px 10px;
+}
+
+footer h4 {
+    color: rgb(59, 152, 238);
+    font-size: 25px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer h5 {
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    padding: 5px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.informacion-horarios p {
+    line-height: 1.8;
+    text-align: center;
+}
+
+i {
+    font-size: 40px;
+}
+
+.redes__iconos {
+    text-align: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: #fff
+}
+
+
+footer section {
+    min-width: 300px;
+}
+
+
+
+footer a:hover {
+    color: rgb(167, 169, 172);
+}
+
+.informacion-item {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.titulo-final {
+    background: #000;
+    color: #fff;
+    font-size: 19px;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+    
+    .programa-teens a,
+    .programa-crossfit a,
+    .programa-funcional a,
+    .programa-running a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .tres-pasos__pasos h3 {
+        padding: 14px;
+        width: 10vw;
+        min-width: 300px;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .prueba-texto h2 {
+        font-size: 30px;
+        padding: 60px;
+    }
+
+    .link-registrate {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .opiniones-equipo__item {
+        font-size: 15px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+
+
+    footer h4 {
+        font-size: 15px;
+    }
+
+    footer i {
+        font-size: 25px;
+    }
+
+    footer a,
+    footer p {
+        font-size: 12px;
+    }
+
+    .informacion-item {
+        text-align: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    .titulo-final {
+        font-size: 12px;
+    }
+
+    .btn-wsp {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+
+
+    .nav-menu {
+        flex-direction: column;
+        background-color: #000000;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        overflow-y: auto;
+        height: calc(100% - 60px);
+    }
+
+    .nav {
+        height: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        background-color: #000000;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        overflow-y: auto;
+        height: calc(50% - 60px);
+        left: 100%;
+        transition: left 0.5s;
+    }
+
+    .nav__link {
+        font-size: 1.3em;
+    }
+
+    .nav__link:hover {
+        color: rgb(185, 177, 180);
+    }
+
+    .nav__item {
+        line-height: 60px;
+        padding: 0 20px;
+    }
+
+    .nav__link--active {
+        padding: 11px 22px;
+        font-size: 1.3em;
+    }
+
+    .nav__img-logo {
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .nav-toggle {
+        font-size: 10px;
+        padding: 10px;
+        height: 60px;
+        line-height: 60px;
+        display: block;
+    }
+
+    .nav-menu__visible {
+        left: 0;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 998px) and (min-width: 577px) {
+    .nav {
+        height: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        background-color: #000000;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        overflow-y: auto;
+        height: calc(50% - 60px);
+        left: 100%;
+        transition: left 0.5s;
+    }
+
+    .nav__link {
+        font-size: 1.3em;
+    }
+
+    .nav__link:hover {
+        color: rgb(185, 177, 180);
+    }
+
+    .nav__item {
+        line-height: 60px;
+        padding: 0 20px;
+    }
+
+    .nav__link--active {
+        padding: 11px 22px;
+        font-size: 1.3em;
+    }
+
+    .nav__img-logo {
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .nav-toggle {
+        font-size: 20px;
+        padding: 5px;
+        height: 60px;
+        line-height: 60px;
+        display: block;
+    }
+
+    .nav-menu__visible {
+        left: 0;
+    }
+
+
+    .contenedor-footer {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .nuestro-equipo__item--active p {
+        font-size: 19px;
+    }
+}
