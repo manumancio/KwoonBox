@@ -32,34 +32,29 @@ header {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: border;
     background-repeat: none;
-    
 }
+
+
 
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 50px 0 0;
     background-color: black;
-    margin: 0;
-    height: 12vh;
+    height: 80px;
     position: fixed;
     width: 100%;
-
 }
-
 
 .nav__link {
     text-decoration: none;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .nav__link:hover {
@@ -67,32 +62,30 @@ header {
 }
 
 .nav__item {
-    padding: 2em;
+    line-height: 80px;
+    padding: 0 30px;
     list-style: none;
-    align-items: right;
+    width: max-content;
 }
 
 .nav__link--active {
     text-decoration: none;
-    padding: 15px 35px;
+    padding: 11px 22px;
     color: rgb(59, 152, 238);
     border: solid 2px rgb(59, 152, 238);
-
-    font-size: 1.5em;
-    font-weight: 520;
-
+    font-size: 1.4em;
+    font-weight: bolder;
 }
 
 .nav__link--active:hover {
     color: #000;
     background-color: rgb(59, 152, 238);
-    border: solid 1px #000;
-    transition: color .3s;
+    transition: color .5s;
 }
 
 .nav__img-logo {
-    height: 12vh;
-    padding-left: 2.4em;
+    height: 80px;
+    padding: 0 30px;
 }
 
 .nav-toggle {
@@ -106,6 +99,8 @@ header {
     margin: 0 20px;
     display: none;
 }
+
+
 
 .btn-wsp {
     position: fixed;
@@ -128,6 +123,8 @@ header {
     color: rgb(43, 192, 80);
     transition: color .2s;
 }
+
+
 
 .main {
     background-color: #000;
@@ -162,31 +159,29 @@ header {
 
 .sobre-nosotros p {
     width: 45%;
-    
+
     line-height: 2.9;
     text-align: justify;
     font-size: 22px;
     font-weight: 500;
 }
 
-
 .sobre-nosotros__boton {
-   text-decoration: none;
-   padding: 15px 35px;
-   color: rgb(59, 152, 238);
-   border: solid 1px rgb(59, 152, 238);
-   
-   font-size: 1.5em;
-   font-weight: 500;
+    text-decoration: none;
+    padding: 15px 35px;
+    color: rgb(59, 152, 238);
+    border: solid 1px rgb(59, 152, 238);
+    font-size: 1.5em;
+    font-weight: 500;
     margin: auto;
     margin-top: 60px;
 }
 
 .sobre-nosotros__boton:hover {
-   color: #000;
-   background-color: rgb(59, 152, 238);
-   border: solid 1px #000;
-   transition: color .3s;
+    color: #000;
+    background-color: rgb(59, 152, 238);
+    border: solid 1px #000;
+    transition: color .3s;
 }
 
 .como-empezo__container,
@@ -221,11 +216,13 @@ header {
 .nuestro-compromiso p {
     line-height: 2.9;
     text-align: justify;
-    font-size: 22px;   
+    font-size: 22px;
     padding: 20px;
     width: 90%;
-   margin: auto;    
+    margin: auto;
 }
+
+
 
 .nuestros-entrenadores {
     background-color: #fff;
@@ -235,14 +232,14 @@ header {
 }
 
 .nuestros-entrenadores h2 {
-    font-size: 30px; 
-    text-align: center;     
+    font-size: 30px;
+    text-align: center;
 }
 
-.nuestros-entrenadores p {    
+.nuestros-entrenadores p {
     padding: 40px;
     justify-content: center;
-    font-size: 22px; 
+    font-size: 22px;
     line-height: 2.9;
     width: 90%;
     margin: auto;
@@ -270,17 +267,18 @@ header {
 }
 
 .galeria__texto {
-    width: 45vw;   
+    width: 45vw;
     text-align: justify;
     padding: 20px;
     font-size: 19px;
-   
     line-height: 1.9;
 }
 
 .galeria__texto h3 {
     padding: 15px;
 }
+
+
 
 footer {
     background: #000;
@@ -344,7 +342,6 @@ footer a {
 
 footer a:hover {
     color: rgb(167, 169, 172);
-
 }
 
 .informacion-item {
@@ -360,6 +357,9 @@ footer a:hover {
     font-size: 19px;
     padding: 0 10px;
 }
+
+
+/*responsive max-width: 577px */
 
 
 @media (max-width: 576px) {
@@ -401,11 +401,10 @@ footer a:hover {
         padding: 8px;
     }
 
-    
     .sobre-nosotros,
     .nuestra-filosofia__container {
         display: inline-block;
-        width: 100vw;       
+        width: 100vw;
     }
 
     .sobre-nosotros h2 {
@@ -415,28 +414,28 @@ footer a:hover {
 
     .nuestros-entrenadores h2 {
         font-size: 25px;
-        text-align: center;           
+        text-align: center;
     }
 
     .parrafos p {
-        line-height: 2.5;       
-        font-size: 15px;     
-         text-align: justify;
-         padding: 10px;
-         width: 100vw;
+        line-height: 2.5;
+        font-size: 15px;
+        text-align: justify;
+        padding: 10px;
+        width: 100vw;
     }
-    
+
     .nuestro-compromiso p {
         line-height: 2.8;
         text-align: justify;
         font-size: 15px;
-    margin:0;
-    padding: 10px;
+        margin: 0;
+        padding: 10px;
         width: 100vw;
         margin: auto;
         padding-bottom: 10px;
-    
     }
+
     .nuestros-entrenadores p {
         line-height: 2;
         font-size: 15px;
@@ -448,15 +447,15 @@ footer a:hover {
         padding: 10px;
     }
 
-    .sobre-nosotros__boton {        
+    .sobre-nosotros__boton {
         padding: 10px 20px;
-        font-size: 15px;        
+        font-size: 15px;
         margin: 30px;
     }
 
     .nuestra-filosofia__img {
-         display: none;
-     }
+        display: none;
+    }
 
     .como-empezo__texto,
     .nuestra-filosofia__texto {
@@ -465,117 +464,116 @@ footer a:hover {
         font-size: 15px;
         padding: 10px;
         text-align: justify;
-        
     }
 
-    .como-empezo__img img{
+    .como-empezo__img img {
         width: 100vw;
     }
-    
-    .como-empezo__container {           
-        width: 100vw;           
-    }    
 
-   .galeria {
-      
-       padding: 10px 0px;
-       width: 100vw;
-       margin: auto;
-   }   
+    .como-empezo__container {
+        width: 100vw;
+    }
 
-   .galeria__img img {
-       width: 100vw;        
-       padding: 10px;
-   }
+    .galeria {
+        padding: 10px 0px;
+        width: 100vw;
+        margin: auto;
+    }
 
-   .galeria__texto {
-       width: 100vw;
-       text-align: justify;
-       padding: 10px;
-       font-size: 15px;
-       line-height: 2;
-   }
+    .galeria__img img {
+        width: 100vw;
+        padding: 10px;
+    }
 
-   .galeria__texto h3 {
-       padding: 10px;
-   }
+    .galeria__texto {
+        width: 100vw;
+        text-align: justify;
+        padding: 10px;
+        font-size: 15px;
+        line-height: 2;
+    }
 
-   .nav-menu {
-       flex-direction: column;
-       background-color: #000000;
-       position: fixed;
-       left: 0;
-       top: 60px;
-       width: 100%;
-       align-items: center;
-       padding: 20px 0;
-       overflow-y: auto;
-       height: calc(100% - 60px);
-   }
+    .galeria__texto h3 {
+        padding: 10px;
+    }
 
-   .nav {
-       height: 60px;
-   }
+        .nav-menu {
+        flex-direction: column;
+        background-color: #000000;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        overflow-y: auto;
+        height: calc(100% - 60px);
+    }
 
-   .nav-menu {
-       flex-direction: column;
-       background-color: #000000;
-       position: fixed;
-       left: 0;
-       top: 60px;
-       width: 100%;
-       align-items: center;
-       padding: 20px 0;
-       overflow-y: auto;
-       height: calc(50% - 60px);
-       left: 100%;
-       transition: left 0.5s;
-   }
+    .nav {
+        height: 60px;
+    }
 
-   .nav__link {
-       font-size: 1.3em;
-   }
+    .nav-menu {
+        flex-direction: column;
+        background-color: #000000;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        overflow-y: auto;
+        height: calc(50% - 60px);
+        left: 100%;
+        transition: left 0.5s;
+    }
 
-   .nav__link:hover {
-       color: rgb(185, 177, 180);
-   }
+    .nav__link {
+        font-size: 1.3em;
+    }
 
-   .nav__item {
-       line-height: 60px;
-       padding: 0 20px;
-   }
+    .nav__link:hover {
+        color: rgb(185, 177, 180);
+    }
 
-   .nav__link--active {
-       padding: 11px 22px;
-       font-size: 1.3em;
-   }
+    .nav__item {
+        line-height: 60px;
+        padding: 0 20px;
+    }
 
-   .nav__img-logo {
-       height: 60px;
-       padding: 0 20px;
-   }
+    .nav__link--active {
+        padding: 11px 22px;
+        font-size: 1.3em;
+    }
 
-   .nav-toggle {
-       font-size: 10px;
-       padding: 10px;
-       height: 60px;
-       line-height: 60px;
-       display: block;
-   }
+    .nav__img-logo {
+        height: 60px;
+        padding: 0 20px;
+    }
 
-   .nav-menu__visible {
-       left: 0;
-   }
+    .nav-toggle {
+        font-size: 10px;
+        padding: 10px;
+        height: 60px;
+        line-height: 60px;
+        display: block;
+    }
 
-   .contenedor-footer {
-       flex-direction: column;
+    .nav-menu__visible {
+        left: 0;
+    }
 
-       margin: 0 auto;
-       text-align: center;
-   }
+    .contenedor-footer {
+        flex-direction: column;
+
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 
+/*responsive max-width: 998px and min-width: 577px */
 
 
 @media (max-width: 998px) and (min-width: 577px) {
@@ -633,11 +631,9 @@ footer a:hover {
         left: 0;
     }
 
-
     .contenedor-footer {
         flex-direction: column;
         margin: 0 auto;
         text-align: center;
     }
 }
-   

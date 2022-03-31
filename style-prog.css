@@ -28,38 +28,34 @@ header {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(/images/portada-prog.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(/images/portada-prog2.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: border;
     background-repeat: none;
     object-position: left;
 }
 
+
+
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 50px 0 0;
     background-color: black;
-    margin: 0;
-    height: 12vh;
+    height: 80px;
     position: fixed;
     width: 100%;
-
 }
-
 
 .nav__link {
     text-decoration: none;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .nav__link:hover {
@@ -67,32 +63,30 @@ header {
 }
 
 .nav__item {
-    padding: 2em;
+    line-height: 80px;
+    padding: 0 30px;
     list-style: none;
-    align-items: right;
+    width: max-content;
 }
 
 .nav__link--active {
     text-decoration: none;
-    padding: 15px 35px;
+    padding: 11px 22px;
     color: rgb(59, 152, 238);
     border: solid 2px rgb(59, 152, 238);
-
-    font-size: 1.5em;
-    font-weight: 520;
-
+    font-size: 1.4em;
+    font-weight: bolder;
 }
 
 .nav__link--active:hover {
     color: #000;
     background-color: rgb(59, 152, 238);
-    border: solid 1px #000;
-    transition: color .3s;
+    transition: color .5s;
 }
 
 .nav__img-logo {
-    height: 12vh;
-    padding-left: 2.4em;
+    height: 80px;
+    padding: 0 30px;
 }
 
 .nav-toggle {
@@ -106,6 +100,8 @@ header {
     margin: 0 20px;
     display: none;
 }
+
+
 
 .btn-wsp {
     position: fixed;
@@ -128,6 +124,8 @@ header {
     color: rgb(43, 192, 80);
     transition: color .2s;
 }
+
+
 
 .programas__tipos {
     display: flex;
@@ -169,6 +167,9 @@ header {
     line-height: 2.2;
     padding-top: 15px
 }
+
+
+
 footer {
     background: #000;
 }
@@ -226,13 +227,11 @@ footer a {
 
 footer a:hover {
     color: rgb(167, 169, 172);
-
 }
 
 footer section {
     min-width: 300px;
 }
-
 
 .informacion-item {
     display: block;
@@ -248,8 +247,7 @@ footer section {
     padding: 0 10px;
 }
 
-
-
+/*responsive max-width: 576px */
 
 
 @media (max-width: 576px) {
@@ -290,8 +288,6 @@ footer section {
         margin-bottom: 10px;
         padding: 8px;
     }
-
-
 
     .nav-menu {
         flex-direction: column;
@@ -373,6 +369,7 @@ footer section {
 }
 
 
+/*responsive max-width: 998px and min-width: 577px */
 
 
 @media (max-width: 998px) and (min-width: 577px) {
@@ -429,7 +426,6 @@ footer section {
     .nav-menu__visible {
         left: 0;
     }
-
 
     .contenedor-footer {
         flex-direction: column;
