@@ -6,40 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwoonbox</title>
-    <keywords=crossfit, kwoonbox, entrenamiento, funcional, crossfit, teens, kids, niños>
-        </keywords>
-        <meta name="description"
-            content="somos un gimnasio de crossfit y entrenamiento funcional para personas de todas las edades">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://kit.fontawesome.com/bda625901b.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/bda625901b.js" crossorigin="anonymous"></script>
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <script defer src="/index.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/bda625901b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bda625901b.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="/index.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="nav">
-            <a href="/index.html" class="nav__logo"><img src="images/kwoon.jpg" class="nav__img-logo"></a>
+            <a href="index.html" class="nav__logo"><img src="images/kwoon.jpg" class="nav__img-logo"
+                    alt="Logo de KwoonBox"></a>
             <button class="nav-toggle"><i class="fas fa-bars"></i></button>
-            <ul class="nav-menu ">
+            <ul class="nav-menu">
                 <li class="nav__item"><a class="nav__link" href="#program">Programas</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="/horarios.html">Horarios</a>
+                <li class="nav__item"><a class="nav__link" href="horarios.html">Horarios</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="/nosotros.html">Sobre Nosotros</a>
+                <li class="nav__item"><a class="nav__link" href="nosotros.html">Sobre Nosotros</a>
                 </li>
                 <li class="nav__item"><a class="nav__link--active"
-                        href="https://api.whatsapp.com/send?phone=543442624204" class="btn-wsp" target="_blank">Comienza
+                        href="https://api.whatsapp.com/send?phone=543442624204" target="_blank">Comienza
                         hoy</a>
             </ul>
         </nav>
@@ -89,32 +83,32 @@
 
         <section class="nuestro-equipo">
             <h2 id="nuestro-team" class="titulo">NUESTRO EQUIPO.</h2>
-                <div class="nuestro-equipo__contenedor">
-                    <div>
-                        <img src="images/profile1RZ.jpg" alt="Imagen de instructor de Kwoonbox"
-                            class="nuestro-equipo__item">
-                    </div>
-                    <div>
-                        <img src="images/profile3RZ.jpg" alt="Imagen de instructor de Kwoonbox"
-                            class="nuestro-equipo__item">
-                    </div>
-                    <div class="nuestro-equipo__item--active">
-                        <p>El cuerpo técnico de KwoonBox es un equipo de profesionales del acondicionamiento físico a
-                            tiempo completo dedicados a ayudarlo a alcanzar sus objetivos. <br> Obtenga más información
-                            sobre nuestros entrenadores a continuación.</p>
-                        <a href="/nosotros.html">Ver más</a>
-                    </div>
-                    <div>
-                        <img src="images/profile2RZ.jpg" alt="Imagen de instructor de Kwoonbox"
-                            class="nuestro-equipo__item">
-                    </div>
+            <div class="nuestro-equipo__contenedor">
+                <div>
+                    <img src="images/profile1RZ.jpg" alt="Imagen de instructor de Kwoonbox"
+                        class="nuestro-equipo__item">
                 </div>
+                <div>
+                    <img src="images/profile3RZ.jpg" alt="Imagen de instructor de Kwoonbox"
+                        class="nuestro-equipo__item">
+                </div>
+                <div class="nuestro-equipo__item--active">
+                    <p>El cuerpo técnico de KwoonBox es un equipo de profesionales del acondicionamiento físico a
+                        tiempo completo dedicados a ayudarlo a alcanzar sus objetivos. <br> Obtenga más información
+                        sobre nuestros entrenadores a continuación.</p>
+                    <a href="nosotros.html">Ver más</a>
+                </div>
+                <div>
+                    <img src="images/profile2RZ.jpg" alt="Imagen de instructor de Kwoonbox"
+                        class="nuestro-equipo__item">
+                </div>
+            </div>
         </section>
 
         <section class="prueba-gratis seccion">
             <div class="prueba-texto">
                 <h2 class="titulo">Reservá tu <b>prueba gratuita</b><br>para comenzar en Kwoon Box hoy! <br> <br></h2>
-                <a class="link-registrate" href="https://api.whatsapp.com/send?phone=543442624204" class="btn-wsp"
+                <a class="link-registrate" href="https://api.whatsapp.com/send?phone=543442624204"
                     target="_blank">EMPEZÁ HOY</a>
             </div>
         </section>
@@ -123,8 +117,9 @@
         /* La idea de la seccion CONTADOR-JS es sumar un contador con Java-Script, que indique: numeros de la semana que
         esta abierto, numero de clases por semana, numero de profes */
 
-
-        <section class="contadores seccion">CONTADOR-JS</section>
+        <section class="contadores seccion">
+            <h2>CONTADOR-JS</h2>
+        </section>
 
         <section class="opiniones-equipo seccion">
             <h2 class="titulo">NUESTRA COMUNIDAD.</h2>
@@ -165,9 +160,11 @@
         definido si ponerlo o no */
 
 
-        <section class="preguntas-frecuentes seccion">PREGUNTAS
-            FRECUENTES-JS
+        <section class="preguntas-frecuentes seccion">
+            <h2>PREGUNTAS FRECUENTES-JS</h2>
         </section>
+
+
     </main>
 
     <footer>
@@ -178,9 +175,8 @@
                     <h4>Contactanos</h4>
                 </div>
                 <div>
-                    <a
-                        href="https://www.google.com.ar/maps/place/Rivadavia+312,+Concepci%C3%B3n+del+Uruguay,+Entre+R%C3%ADos/@-32.489878,-58.237614,17z/data=!3m1!4b1!4m5!3m4!1s0x95afdba82feda7dd:0x746f597dbf78b19d!8m2!3d-32.489878!4d-58.2354253"><i
-                            class='bx bx-map' target="_blank"></i> Rivadavia 312. Concepción del Uruguay. ER.</a>
+                    <a href="https://www.google.com.ar/maps/place/Rivadavia+312,+Concepci%C3%B3n+del+Uruguay,+Entre+R%C3%ADos/@-32.489878,-58.237614,17z/data=!3m1!4b1!4m5!3m4!1s0x95afdba82feda7dd:0x746f597dbf78b19d!8m2!3d-32.489878!4d-58.2354253"
+                        target="_blank"><i class='bx bx-map'></i> Rivadavia 312. Concepción del Uruguay. ER.</a>
                 </div>
                 <div>
                     <a href="https://api.whatsapp.com/send?phone=543442624204" target="_blank"><i
@@ -214,7 +210,7 @@
 
         <section class="informacion-relacionada">
             <div>
-                <a href="#" class="informacion-item">Políticas de Privacidad | Términos & Condiciones</a>
+                <h5><a href="#" class="informacion-item">Políticas de Privacidad | Términos & Condiciones</a></h5>
             </div>
         </section>
 

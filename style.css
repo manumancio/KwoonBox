@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +34,7 @@ header {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(/images/rsz_portada3.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(images/rsz_portada3.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
 }
@@ -99,42 +103,9 @@ header {
     padding: 20px 40px;
     margin: 0 20px;
     display: none;
-    font-weight: lighter;
 }
 
 
-
-.seccion-header {
-    padding-top: 3.3em;
-}
-
-.seccion-header__texto {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 4em;
-    color: #fff;
-    padding: 1.1em;
-    text-shadow: 0.1em 0.1em 0.2em rgb(24, 23, 23);
-}
-
-
-
-.btn-wsp {
-    position: fixed;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    bottom: 60px;
-    right: 60px;
-    background-color: rgb(43, 192, 80);
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 50px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-}
 
 .btn-wsp {
     position: fixed;
@@ -157,6 +128,25 @@ header {
     color: rgb(43, 192, 80);
     transition: color .2s;
 }
+
+
+
+
+.seccion-header {
+    padding-top: 3.3em;
+}
+
+.seccion-header__texto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 4em;
+    color: #fff;
+    padding: 1.1em;
+    text-shadow: 0.1em 0.1em 0.2em rgb(24, 23, 23);
+}
+
+
 
 
 
@@ -210,7 +200,7 @@ header {
     background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7));
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7)),
-        url(/images/HD2rsz_1victor-freitas-vjkm-0m34ku-unsplash.jpg);
+        url(images/HD2rsz_1victor-freitas-vjkm-0m34ku-unsplash.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     width: 40vw;
@@ -234,7 +224,7 @@ header {
 }
 
 .programa-crossfit a:hover {
-    background: url(/images/HD2rsz_1victor-freitas-vjkm-0m34ku-unsplash.jpg);
+    background: url(images/HD2rsz_1victor-freitas-vjkm-0m34ku-unsplash.jpg);
     background-size: cover;
 }
 
@@ -303,7 +293,7 @@ header {
 }
 
 .programa-running a:hover {
-    background: url(/images/runningRZ.jpg);
+    background: url(images/runningRZ.jpg);
     background-size: cover;
 }
 
@@ -312,7 +302,7 @@ header {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7));
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7)), url(/images/KIDS\ AND\ TEEN.jpeg);
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.199), hsla(0, 0%, 0%, 0.7)), url(images/KIDS-AND-TEEN.jpeg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     width: 40vw;
@@ -336,7 +326,7 @@ header {
 }
 
 .programa-teens a:hover {
-    background: url(/images/KIDS\ AND\ TEEN.jpeg);
+    background: url(images/KIDS-AND-TEEN.jpeg);
     background-size: cover;
 }
 
@@ -374,14 +364,14 @@ header {
     text-shadow: 0.1em 0.1em 0.2em rgb(20, 19, 19);
     color: #fff;
     text-align: center;
-    font-size: 22px;
+    font-size: 21px;
     word-wrap: break-word;
 }
 
 .nuestro-equipo__item--active p {
     justify-content: center;
     padding: 35px 15px;
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
 .nuestro-equipo__item--active a {
@@ -400,7 +390,7 @@ header {
     background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.4), hsla(0, 0%, 0%, 0.9));
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(0, 0%, 26%, 0.4), hsla(0, 0%, 0%, 0.9)),
-        url(/images/rsz_yaregistrate44.jpg);
+        url(images/rsz_yaregistrate44.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
     background-size: cover;
@@ -681,22 +671,32 @@ footer a:hover {
         padding: 0 20px;
     }
 
-    .nav-toggle {
-        font-size: 10px;
-        padding: 10px;
+    .nav-toggle {        
+         padding: 10px 40px;
         height: 60px;
         line-height: 60px;
         display: block;
     }
 
+     .nav-toggle i {
+         font-size: 30px;         
+     }
+
     .nav-menu__visible {
         left: 0;
+    }
+
+    .seccion-header__texto {
+        
+        font-size: 3.5em;
+      
+        padding: 1.3em;
     }
 
     .contenedor-footer {
         flex-direction: column;
 
-        margin: 0 auto;
+       
         text-align: center;
     }
 }

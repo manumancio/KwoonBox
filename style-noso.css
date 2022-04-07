@@ -28,7 +28,7 @@ header {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(/images/777722jametlene-reskp-I6at9F7mWDQ-unsplash\ \(1\).jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(images/777722jametlene-reskp-I6at9F7mWDQ-unsplash\ \(1\).jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: border;
     background-repeat: none;
@@ -98,6 +98,7 @@ header {
     padding: 20px 40px;
     margin: 0 20px;
     display: none;
+    font-weight: lighter;
 }
 
 
@@ -159,11 +160,12 @@ header {
 
 .sobre-nosotros p {
     width: 45%;
-
+    min-width: 350px;
     line-height: 2.9;
     text-align: justify;
     font-size: 22px;
     font-weight: 500;
+    padding: 0 30px;
 }
 
 .sobre-nosotros__boton {
@@ -184,43 +186,124 @@ header {
     transition: color .3s;
 }
 
-.como-empezo__container,
-.nuestra-filosofia__container {
+.como-empezo__container {
     width: 90%;
-    margin: auto;
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
+    align-items: center;
+   }
+
+   
+   
+
+   
+
+.como-empezo h2 {
+    padding: 10px 0;
 }
 
-.como-empezo h2,
-.nuestra-filosofia h2 {
-    padding: 20px;
-}
 
-.como-empezo__texto,
-.nuestra-filosofia__texto {
+
+
+.como-empezo__texto {
     width: 45%;
+    min-width: 350px;
     line-height: 2.9;
-    font-size: 22px;
+    font-size: 22px;  
+    text-align: center;
+    align-items: center;
+    margin: auto;
 }
 
-.como-empezo__img,
-.nuestra-filosofia__img {
-    width: 40%;
-    min-width: 400px;
-    object-fit: center;
-    padding: 20px;
+
+
+
+
+
+
+
+.como-empezo__img {
+    width: 35%;
+    min-width: 350px;
+        
 }
 
-.nuestro-compromiso p {
-    line-height: 2.9;
-    text-align: justify;
-    font-size: 22px;
-    padding: 20px;
+
+.nuestra-filosofia__container {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    align-items: center;
+}
+
+
+
+
+
+.nuestra-filosofia__texto {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    font-weight: bolder;
+}
+
+.nuestra-filosofia__texto h2 {
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+.nuestra-filosofia__texto h3 {
+    padding: 10px;
     width: 90%;
     margin: auto;
 }
+
+.nuestra-filosofia__texto p {
+    padding: 40px;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 2.9;
+    width: 90%;
+    margin: auto;
+
+}
+
+
+
+
+
+
+
+.nuestro-compromiso {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    font-weight: bolder;
+}
+
+.nuestro-compromiso h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.nuestro-compromiso p {
+    padding: 40px;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 2.9;
+    width: 90%;
+    margin: auto;
+
+}
+
 
 
 
@@ -401,40 +484,138 @@ footer a:hover {
         padding: 8px;
     }
 
-    .sobre-nosotros,
-    .nuestra-filosofia__container {
-        display: inline-block;
-        width: 100vw;
-    }
+    
+    
 
-    .sobre-nosotros h2 {
-        padding: 10px 30px;
-        font-size: 25px;
-    }
+.parrafos {
+    display:inline-block;
+}
 
-    .nuestros-entrenadores h2 {
-        font-size: 25px;
-        text-align: center;
-    }
+.sobre-nosotros {
+    display: inline-block;    
+    width: 100vw;    
+}
 
-    .parrafos p {
-        line-height: 2.5;
-        font-size: 15px;
-        text-align: justify;
-        padding: 10px;
-        width: 100vw;
-    }
+.sobre-nosotros h2 {
+    padding: 0 20px;
+    font-size: 40px;
+}
 
-    .nuestro-compromiso p {
-        line-height: 2.8;
-        text-align: justify;
-        font-size: 15px;
-        margin: 0;
-        padding: 10px;
-        width: 100vw;
-        margin: auto;
-        padding-bottom: 10px;
-    }
+.sobre-nosotros p {
+    min-width: 328px;  
+    line-height: 1.8;    
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 25px;
+}
+
+.sobre-nosotros__boton {
+    
+    padding: 15px 35px;
+  
+    font-size: 2em;
+    font-weight: 600;
+    margin: 30px 50px;
+}
+
+.como-empezo__container {
+    width: 100vw;
+}
+
+
+.como-empezo h2 {
+    padding: 100px 0;
+}
+
+
+.como-empezo__texto {
+    min-width: 328px;
+    line-height: 1.8;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 25px;
+    text-align: justify;
+}
+
+
+.como-empezo__img {
+    width: 100vw;
+}
+
+
+.nuestra-filosofia__container {
+    display: inline-block;
+   align-items: center;
+}
+
+
+.nuestra-filosofia__texto {
+  width: 100vw;
+   line-height: 1.8;
+   font-size: 18px;
+   margin: 0;
+   padding: 10px 21px;
+   text-align: justify;
+}
+
+.nuestra-filosofia__texto h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.nuestra-filosofia__texto h3 {
+    padding: 0px 10px;
+    width: 100vw;
+    margin: auto;
+}
+
+.nuestra-filosofia__texto p {
+     min-width: 328px;
+     line-height: 1.8;
+     font-size: 18px;
+     margin: 0;
+     padding: 10px 0px;
+
+}
+
+
+
+
+
+
+
+.nuestro-compromiso {
+      padding: 20px;
+    font-weight: bold;
+}
+
+.nuestro-compromiso h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.nuestro-compromiso p {
+   min-width: 328px;
+   line-height: 1.8;
+   font-size: 18px;
+   margin: 0;
+   padding: 10px 0px;
+
+}
+
+
+
+
+
+   
+    
+
+     .nuestros-entrenadores h2 {
+         font-size: 25px;
+         text-align: center;
+     }
+
 
     .nuestros-entrenadores p {
         line-height: 2;
@@ -450,29 +631,19 @@ footer a:hover {
     .sobre-nosotros__boton {
         padding: 10px 20px;
         font-size: 15px;
-        margin: 30px;
+      
+        
+        
     }
 
-    .nuestra-filosofia__img {
-        display: none;
-    }
+    
 
-    .como-empezo__texto,
-    .nuestra-filosofia__texto {
-        width: 100vw;
-        line-height: 2.5;
-        font-size: 15px;
-        padding: 10px;
-        text-align: justify;
-    }
 
     .como-empezo__img img {
         width: 100vw;
     }
 
-    .como-empezo__container {
-        width: 100vw;
-    }
+    
 
     .galeria {
         padding: 10px 0px;
@@ -497,7 +668,8 @@ footer a:hover {
         padding: 10px;
     }
 
-        .nav-menu {
+       
+    .nav-menu {
         flex-direction: column;
         background-color: #000000;
         position: fixed;
@@ -553,11 +725,14 @@ footer a:hover {
     }
 
     .nav-toggle {
-        font-size: 10px;
-        padding: 10px;
+        padding: 10px 40px;
         height: 60px;
         line-height: 60px;
         display: block;
+    }
+
+    .nav-toggle i {
+        font-size: 30px;
     }
 
     .nav-menu__visible {
@@ -569,6 +744,15 @@ footer a:hover {
 
         margin: 0 auto;
         text-align: center;
+    }
+
+    .btn-wsp {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
     }
 }
 

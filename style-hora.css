@@ -14,11 +14,12 @@ body {
 }
 
 .titulo {
-    font-size: 30px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-top: 60px
+   font-size: 30px;
+   font-family: 'Inter',
+   sans-serif;
+   text-align: center;
+  
+   padding: 60px 0;
 }
 
 header {
@@ -28,7 +29,7 @@ header {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(/images/portada-prog2.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.719), hsla(0, 0%, 0%, 0.699)), url(images/portada-prog2.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: border;
     background-repeat: none;
@@ -318,13 +319,16 @@ footer a:hover {
          padding: 0 20px;
      }
 
-     .nav-toggle {
-         font-size: 10px;
-         padding: 10px;
-         height: 60px;
-         line-height: 60px;
-         display: block;
-     }
+    .nav-toggle {
+        padding: 10px 40px;
+        height: 60px;
+        line-height: 60px;
+        display: block;
+    }
+
+    .nav-toggle i {
+        font-size: 30px;
+    }
 
      .nav-menu__visible {
          left: 0;
